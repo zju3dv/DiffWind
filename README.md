@@ -1,7 +1,7 @@
 # [ICLR 2026] DiffWind: Physics-Informed Differentiable Modeling of Wind-Driven Object Dynamics
 
 
-### [Project Page](https://zju3dv.github.io/DiffWind/) | [OpenReview](https://openreview.net/forum?id=vKVzihkbQo) | [Arxiv]() | [Supplementary]()
+### [Project Page](https://zju3dv.github.io/DiffWind/) | [OpenReview](https://openreview.net/forum?id=vKVzihkbQo) | [Arxiv (Coming soon)]() | [Supplementary (Coming soon)]()
 
 > [DiffWind: Physics-Informed Differentiable Modeling of Wind-Driven Object Dynamics](https://zju3dv.github.io/DiffWind/),  
 > Yuanhang Lei, Boming Zhao, Zesong Yang, Xingxuan Li, Tao Cheng, Haocheng Peng, Ru Zhang, Yang Yang, Siyuan Huang, Yujun Shen, Ruizhen Hu, Hujun Bao, Zhaopeng Cui
