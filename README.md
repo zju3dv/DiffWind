@@ -15,8 +15,10 @@ their interaction modeled by the Material Point Method (MPM). To recover wind-dr
 
 ## ToDos
 🔥 Feel free to raise any requests~
-- [x] Release project page and paper.
-- [ ] Release training codes and preprocessed datasets.
+- [x] Release project page.
+- [ ] Release paper.
+- [ ] Release simulation codes.
+- [ ] Release training codes.
 
 ### Citation
 If you find this work useful for your research, please use the following BibTeX entry.
