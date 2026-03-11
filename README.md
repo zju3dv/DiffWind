@@ -1,7 +1,7 @@
 # [ICLR 2026] DiffWind: Physics-Informed Differentiable Modeling of Wind-Driven Object Dynamics
 
 
-### [Project Page](https://zju3dv.github.io/DiffWind/) | [OpenReview](https://openreview.net/forum?id=vKVzihkbQo) | [Arxiv (Coming soon)]() | [Supplementary (Coming soon)]()
+### [Project Page](https://zju3dv.github.io/DiffWind/) | [OpenReview](https://openreview.net/forum?id=vKVzihkbQo) | [Arxiv](https://arxiv.org/abs/2603.09668)
 
 > [DiffWind: Physics-Informed Differentiable Modeling of Wind-Driven Object Dynamics](https://zju3dv.github.io/DiffWind/),  
 > Yuanhang Lei*, Boming Zhao*, Zesong Yang*, Xingxuan Li, Tao Cheng, Haocheng Peng, Ru Zhang, Yang Yang, Siyuan Huang, Yujun Shen, Ruizhen Hu, Hujun Bao, Zhaopeng Cui†
@@ -16,9 +16,16 @@ their interaction modeled by the Material Point Method (MPM). To recover wind-dr
 ## ToDos
 🔥 Feel free to raise any requests~
 - [x] Release project page.
-- [ ] Release paper.
+- [x] Release paper.
 - [ ] Release simulation codes.
 - [ ] Release training codes.
+
+## Acknowledgement
+This codebase used lots of source code from: 
+1. [MPM](https://github.com/xuan-li/PAC-NeRF/blob/main/lib/engine/mpm_simulator.py)
+2. [LBM](https://github.com/leqiqin/Computational-Biomimetics-of-Winged-Seeds/blob/main/LBM.py)
+
+We thank the authors of these projects.
 
 ### Citation
 If you find this work useful for your research, please use the following BibTeX entry.
