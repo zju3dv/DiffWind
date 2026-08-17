@@ -1,0 +1,23 @@
+{
+  "gs": {
+    "quiet": false,
+    "white_background": true,
+    "mv_num": 100,
+    "camera_width": 900,
+    "camera_height": 900
+  },
+  "physics": {
+    "material": 10,
+    "rho": 1000.0,
+    "mpm_iter_cnt": 400,
+    "fps": 30,
+    "voxel_size": 0.03125,
+    "gravity": [0.0, 0.0, 0.0],
+    "bc": {"ground": [[0.0, 0.0, 0.5], [0.0, 0.0, 1.0], 0]},
+    "init_vel": [0.0, 0.0, 0.0],
+    "part_counts": [69049, 21138],
+    "E_list": [50000.0, 50000.0],
+    "poisson_list": [0.3, 0.3],
+    "static_part": {"point": [1.0, 1.5, 1.0], "size": [1.0, 0.05, 1.0]}
+  }
+}

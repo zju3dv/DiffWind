@@ -1,0 +1,8 @@
+{
+  "gs": {
+    "quiet": false,
+    "white_background": true,
+    "mv_num": 100
+  },
+  "physics": {}
+}

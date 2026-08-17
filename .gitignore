@@ -1,1 +1,79 @@
+# Local assistant and agent files (never publish)
+.codex/
+**/.codex/
+.agents/
+**/.agents/
+.agent/
+**/.agent/
+AGENTS.md
+**/AGENTS.md
+CODEX.md
+**/CODEX.md
+PROJECT_CONTINUITY.md
+**/PROJECT_CONTINUITY.md
+.claude/
+.cursor/
+.windsurf/
+codex_*
+CODEX_*
+
+# Python and native build products
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+*.o
+*.a
+
+# Environments and local configuration
+.env
+.env.*
+.venv/
+venv/
+env/
+.conda/
+*.local.json
+
+# Editors and operating systems
 .DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Generated simulation/rendering data
+outputs/
+runs/
+wandb/
+debug/
+render_wind_couple/
+forward_simulation/
+multiview/
+*.log
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.dat
+*.mp4
+*.gif
+!media/results/*.mp4
+!media/results/*.gif
+
+# GLM is provided by the environment; do not publish the vendored source tree.
+third_party/diff-gaussian-rasterization/third_party/glm/
+
+# Local datasets/checkpoints not explicitly curated under assets/
+data/
+datasets/
+checkpoints/
