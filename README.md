@@ -2,7 +2,7 @@
 
 ### [Project Page](https://zju3dv.github.io/DiffWind/) · [OpenReview](https://openreview.net/forum?id=vKVzihkbQo) · [arXiv](https://arxiv.org/abs/2603.09668)
 
-> **DiffWind: Physics-Informed Differentiable Modeling of Wind-Driven Object Dynamics**
+> **DiffWind: Physics-Informed Differentiable Modeling of Wind-Driven Object Dynamics**<br>
 > Yuanhang Lei\*, Boming Zhao\*, Zesong Yang\*, Xingxuan Li, Tao Cheng,
 > Haocheng Peng, Ru Zhang, Yang Yang, Siyuan Huang, Yujun Shen, Ruizhen Hu,
 > Hujun Bao, Zhaopeng Cui†
