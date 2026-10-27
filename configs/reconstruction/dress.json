@@ -1,0 +1,100 @@
+{
+  "scene": "dress",
+  "data_scene": "dress",
+  "gaussians": "assets/dress/model.ply",
+  "filling": "assets/dress/filling.ply",
+  "camera": {
+    "kind": "json",
+    "views": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "resolution": [
+      900,
+      900
+    ],
+    "file": "assets/dress/cameras.json",
+    "fovx": 1.04719758,
+    "fovy": 1.04719758
+  },
+  "physics": {
+    "material": 10,
+    "rho": 1000,
+    "mpm_iter_cnt": 400,
+    "fps": 30,
+    "voxel_size": 0.03125,
+    "gravity": [
+      0,
+      0,
+      0.0
+    ],
+    "bc": {
+      "ground": [
+        [
+          0,
+          0,
+          0.5
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        0
+      ]
+    },
+    "init_vel": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "part_counts": [
+      67171,
+      23016
+    ],
+    "E_list": [
+      50000.0,
+      50000.0
+    ],
+    "poisson_list": [
+      0.3,
+      0.3
+    ],
+    "static_part": {
+      "point": [
+        1.0,
+        1.5,
+        1.0
+      ],
+      "size": [
+        1.0,
+        0.05,
+        1.0
+      ]
+    }
+  },
+  "cache_chunk": 50,
+  "audit_epsilons": [
+    3,
+    2,
+    1
+  ],
+  "optimization": {
+    "initial_lr": 0.001,
+    "min_updates": 16,
+    "max_updates": 64,
+    "frames": 48
+  },
+  "notes": "40k Gaussian model matches the organized reconstruction GT.",
+  "asset_sha256": {
+    "assets/dress/model.ply": "9507916c5a277ae24ef8736dddd7fcd011bb5c3b3c7ebc40a83d1b7c29aa3a19",
+    "assets/dress/filling.ply": "c8feb9ce9661556e9ed5a5ea2da1a25d947f67a99616aebaf27c216a31857e1c",
+    "assets/dress/cameras.json": "fc9ec7aa39ccb948016991709e5e05fcb9d10fbe9e7cb30b44da769ffa785fea"
+  }
+}

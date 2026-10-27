@@ -488,7 +488,8 @@ renderCUDA(
 
 	// In the forward, we stored the final value for T, the
 	// product of all (1 - alpha) factors. 
-	const float T_final = inside ? (1 - alphas[pix_id]) : 0;
+	// Stored forward transmittance.
+	const float T_final = inside ? alphas[pix_id] : 0;
 	float T = T_final;
 
 	// We start from the back. The ID of the last contributing
@@ -622,10 +623,7 @@ renderCUDA(
 			atomicAdd(&dL_dmean2D[global_id].x, dL_dG * dG_ddelx * ddelx_dx);
 			atomicAdd(&dL_dmean2D[global_id].y, dL_dG * dG_ddely * ddely_dy);
 
-            // Update gradients w.r.t. 2D mean position of the Gaussian (proj_2D)
-			atomicAdd(&dL_proj_2D[global_id * 2 + 0], dL_dG * dG_ddelx * ddelx_dx);
-			atomicAdd(&dL_proj_2D[global_id * 2 + 1], dL_dG * dG_ddely * ddely_dy);
-		    //atomicAdd(&dL_proj_2D[global_id].y, dL_dG * dG_ddely * ddely_dy);
+			// Accumulate RGB cotangents in the internal buffers.
  
 			// Update gradients w.r.t. 2D covariance (2x2 matrix, symmetric)
 
@@ -633,10 +631,6 @@ renderCUDA(
 			atomicAdd(&dL_dconic2D[global_id].y, -0.5f * gdx * d.y * dL_dG);
 			atomicAdd(&dL_dconic2D[global_id].w, -0.5f * gdy * d.y * dL_dG);
 
-            // Update gradients w.r.t. 2D covariance (output to python interface) (same as dL_dconic2D)
-			atomicAdd(&dL_conic_2D[global_id * 3 + 0], -0.5f * gdx * d.x * dL_dG);
-			atomicAdd(&dL_conic_2D[global_id * 3 + 1], -0.5f * gdx * d.y * dL_dG);
-			atomicAdd(&dL_conic_2D[global_id * 3 + 2], -0.5f * gdy * d.y * dL_dG);
 
 			// Update gradients w.r.t. opacity of the Gaussian
 			atomicAdd(&(dL_dopacity[global_id]), G * dL_dopa);

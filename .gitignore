@@ -1,4 +1,4 @@
-# Local assistant and agent files (never publish)
+# Local tooling
 .codex/
 **/.codex/
 .agents/
@@ -25,6 +25,7 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.cache/
 build/
 dist/
 cmake-build-*/
@@ -70,10 +71,10 @@ multiview/
 !media/results/*.mp4
 !media/results/*.gif
 
-# GLM is provided by the environment; do not publish the vendored source tree.
+# Environment-provided GLM
 third_party/diff-gaussian-rasterization/third_party/glm/
 
-# Local datasets/checkpoints not explicitly curated under assets/
+# Local datasets and checkpoints
 data/
 datasets/
 checkpoints/

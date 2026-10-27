@@ -14,6 +14,8 @@ import torch.nn as nn
 import torch
 from . import _C
 
+RGB_ADJOINT_VERSION = getattr(_C, "rgb_adjoint_version", None)
+
 def cpu_deep_copy_tuple(input_tuple):
     copied_tensors = [item.cpu().clone() if isinstance(item, torch.Tensor) else item for item in input_tuple]
     return tuple(copied_tensors)
@@ -227,4 +229,3 @@ class GaussianRasterizer(nn.Module):
             cov3D_precomp,
             raster_settings, 
         )
-

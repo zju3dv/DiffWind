@@ -1,0 +1,96 @@
+{
+  "scene": "flag",
+  "data_scene": "flag",
+  "gaussians": "assets/flag/reconstruction_model.ply",
+  "filling": null,
+  "camera": {
+    "kind": "json",
+    "views": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "resolution": [
+      900,
+      900
+    ],
+    "file": "assets/flag/cameras.json",
+    "fovx": 1.04719758,
+    "fovy": 1.04719758
+  },
+  "physics": {
+    "material": 10,
+    "rho": 1000,
+    "mpm_iter_cnt": 400,
+    "fps": 30,
+    "voxel_size": 0.03125,
+    "gravity": [
+      0,
+      0,
+      0.0
+    ],
+    "bc": {
+      "ground": [
+        [
+          0,
+          0,
+          0.5
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        0
+      ]
+    },
+    "init_vel": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "part_counts": [
+      55007
+    ],
+    "E_list": [
+      50000.0
+    ],
+    "poisson_list": [
+      0.3
+    ],
+    "static_part": {
+      "point": [
+        1.5,
+        1.0,
+        1.0
+      ],
+      "size": [
+        0.05,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "cache_chunk": 50,
+  "audit_epsilons": [
+    3,
+    2,
+    1
+  ],
+  "optimization": {
+    "initial_lr": 0.001,
+    "min_updates": 16,
+    "max_updates": 64,
+    "frames": 48
+  },
+  "notes": "Reconstruction uses the 55007-Gaussian model; forward demos use the separate model.ply.",
+  "asset_sha256": {
+    "assets/flag/reconstruction_model.ply": "f42431d84065c4f5f0ca096ea987686abfed9759ab5427f2d8096364fed50545",
+    "assets/flag/cameras.json": "31b2e9f7a9f547322cd616ccaaf6ccbf27d690e4687c4494178ec63712bfb84c"
+  }
+}

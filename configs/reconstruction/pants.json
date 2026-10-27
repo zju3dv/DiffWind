@@ -1,0 +1,100 @@
+{
+  "scene": "pants",
+  "data_scene": "pants",
+  "gaussians": "assets/pants/model.ply",
+  "filling": "assets/pants/filling.ply",
+  "camera": {
+    "kind": "json",
+    "views": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "resolution": [
+      900,
+      900
+    ],
+    "file": "assets/pants/cameras.json",
+    "fovx": 1.04719758,
+    "fovy": 1.04719758
+  },
+  "physics": {
+    "material": 10,
+    "rho": 1000,
+    "mpm_iter_cnt": 400,
+    "fps": 30,
+    "voxel_size": 0.03125,
+    "gravity": [
+      0,
+      0,
+      0.0
+    ],
+    "bc": {
+      "ground": [
+        [
+          0,
+          0,
+          0.5
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        0
+      ]
+    },
+    "init_vel": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "part_counts": [
+      19004,
+      6334
+    ],
+    "E_list": [
+      70000.0,
+      70000.0
+    ],
+    "poisson_list": [
+      0.3,
+      0.3
+    ],
+    "static_part": {
+      "point": [
+        1.0,
+        1.5,
+        1.0
+      ],
+      "size": [
+        1.0,
+        0.1,
+        1.0
+      ]
+    }
+  },
+  "cache_chunk": 100,
+  "audit_epsilons": [
+    1,
+    0.7,
+    0.5
+  ],
+  "optimization": {
+    "initial_lr": 0.001,
+    "min_updates": 16,
+    "max_updates": 64,
+    "frames": 48
+  },
+  "notes": "Reconstruction benchmark uses E=70000.",
+  "asset_sha256": {
+    "assets/pants/model.ply": "57d011f4b8698a6442c0a8f82100623927293a0b4bf6b9b1271250d1de5c9ace",
+    "assets/pants/filling.ply": "79801aa650ef6805cadf2cb52ba86417470b7d533338f8dbca242babcf6fd85a",
+    "assets/pants/cameras.json": "12cb396a21d8eca9075313f422cf8181f11d72c614a0f61fffbadcc082dcdbe5"
+  }
+}
