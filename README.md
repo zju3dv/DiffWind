@@ -1,8 +1,9 @@
 <div align="center">
 
-<img src="media/diffwind-logo.png" alt="DiffWind" width="360">
-
-### Physics-Informed Differentiable Modeling<br>of Wind-Driven Object Dynamics
+<h3>
+  <img src="media/diffwind-logo.png" alt="DiffWind" width="360"><br>
+  Physics-Informed Differentiable Modeling<br>of Wind-Driven Object Dynamics
+</h3>
 
 **ICLR 2026**
 
