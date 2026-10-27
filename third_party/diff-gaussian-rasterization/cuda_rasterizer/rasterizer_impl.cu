@@ -173,6 +173,7 @@ CudaRasterizer::ImageState CudaRasterizer::ImageState::fromChunk(char*& chunk, s
 {
 	ImageState img;
 	obtain(chunk, img.n_contrib, N, 128);
+	obtain(chunk, img.final_T, N, 128);
 	obtain(chunk, img.ranges, N, 128);
 	return img;
 }
@@ -341,6 +342,7 @@ int CudaRasterizer::Rasterizer::forward(
 		geomState.depths,
 		geomState.conic_opacity,
 		out_alpha,
+		imgState.final_T,
 		imgState.n_contrib,
 		background,
 		out_color,
@@ -428,7 +430,7 @@ void CudaRasterizer::Rasterizer::backward(
 		geomState.conic_opacity,
 		color_ptr,
 		depth_ptr,
-		alphas,
+		imgState.final_T,
 		imgState.n_contrib,
 		dL_dpix,
 		dL_dpix_depth,

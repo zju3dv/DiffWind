@@ -151,8 +151,7 @@ class GaussianModel:
     def create_from_pcd(
         self, pcd: BasicPointCloud, cam_infos: int, spatial_lr_scale: float
     ):
-        # Only training/point-cloud initialization needs simple-knn. Forward
-        # simulation loads an existing Gaussian PLY and does not require it.
+        # Initialize Gaussian scales from nearest-neighbor distances.
         from simple_knn._C import distCUDA2
 
         self.spatial_lr_scale = spatial_lr_scale

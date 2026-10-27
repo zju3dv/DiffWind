@@ -381,15 +381,17 @@ class MPMSimulator_Force:
             new_F = self.F[p, s + 1]
             stress = ti.Matrix.zero(self.dtype, self.dim, self.dim)
             if ti.static(self.material == self.elasticity):
-                J = new_F.determinant()
-                scale = self.lam[p] * ti.log(J) - self.mu[p]
-                grad_v = self.C[p, s]
-                epsilon = 0.5 * (grad_v + grad_v.transpose())
-                stress = (
-                    self.damping_coeff * epsilon * J
-                    + self.mu[p] * (new_F @ new_F.transpose())
-                    + scale * ti.Matrix.identity(self.dtype, self.dim)
-                )
+                # Evaluate constitutive stress for elastic or damped particles.
+                if self.mu[p] != 0 or self.lam[p] != 0 or ti.static(self.damping_coeff != 0):
+                    J = new_F.determinant()
+                    scale = self.lam[p] * ti.log(J) - self.mu[p]
+                    grad_v = self.C[p, s]
+                    epsilon = 0.5 * (grad_v + grad_v.transpose())
+                    stress = (
+                        self.damping_coeff * epsilon * J
+                        + self.mu[p] * (new_F @ new_F.transpose())
+                        + scale * ti.Matrix.identity(self.dtype, self.dim)
+                    )
             elif ti.static(self.material == self.viscous_fluid):
                 J = new_F[0, 0]
                 kappa = 0.6666666666 * self.mu[p] + self.lam[p]

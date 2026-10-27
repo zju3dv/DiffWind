@@ -17,3 +17,8 @@ scenes whose original views are not orbit cameras.
 | Hat | 297,402 | — | multiview + forward |
 | Dress | 67,171 | 23,016 | multiview + forward |
 | Flag | 356,179 | — | multiview + forward |
+| Flag (reconstruction) | 55,007 | — | reconstruction |
+
+`flag/reconstruction_model.ply` matches the WD-Objects reconstruction sequence;
+`flag/model.ply` remains the forward-demo asset. Reconstruction camera,
+material, and boundary settings are in `configs/reconstruction/`.
