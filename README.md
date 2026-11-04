@@ -16,14 +16,14 @@ Haocheng Peng, Ru Zhang, Yang Yang, [Siyuan Huang](https://siyuanhuang.com/), [Y
 [![OpenReview](https://img.shields.io/badge/OpenReview-ICLR_2026-8c5a2b?style=flat-square)](https://openreview.net/forum?id=vKVzihkbQo)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-green?style=flat-square)](LICENSE)
 
-[News](#-news) · [Overview](#-overview) · [Installation](#-installation) · [Reconstruction](#-agent-reconstruction) · [Results](#-reconstruction-results) · [Citation](#-citation)
+[News](#-news) · [Overview](#-overview) · [Installation](#-installation) · [Reconstruction](#agent-reconstruction) · [Results](#-reconstruction-results) · [Citation](#-citation)
 
 </div>
 
 ## 📰 News
 
 - **[2026-10-30]** DiffWind is now featured in [PhysStudio](https://github.com/zju3dv/PhysStudio#diffwind), our open-source world simulator for physics-based animation. 🌏
-- **[2026-10-27]** [Agent Reconstruction](#-agent-reconstruction) is now open source, with automatic force fitting and held-out evaluation.
+- **[2026-10-27]** [Agent Reconstruction](#agent-reconstruction) is now open source, with automatic force fitting and held-out evaluation.
 - **[2026-08-18]** The DiffWind simulation code is now available! Welcome to try it out and share your feedback.
 - **[2026-01-25]** DiffWind has been accepted to **ICLR 2026**! 🎉
 
@@ -122,6 +122,8 @@ Outputs are written under `outputs/<scene>/render_wind_couple/` or
 `outputs/<scene>_multiview/multiview/`.
 
 </details>
+
+<a name="agent-reconstruction"></a>
 
 ## 🏋️ Agent reconstruction
 
