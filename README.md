@@ -7,18 +7,25 @@
 
 **ICLR 2026**
 
-Yuanhang Lei<sup>&#42;</sup>, Boming Zhao<sup>&#42;</sup>, Zesong Yang<sup>&#42;</sup>, Xingxuan Li, Tao Cheng,<br>
-Haocheng Peng, Ru Zhang, Yang Yang, Siyuan Huang, Yujun Shen, Ruizhen Hu,<br>
-Hujun Bao, Zhaopeng Cui<sup>†</sup>
+[Yuanhang Lei](https://github.com/huahuo359)<sup>&#42;</sup>, [Boming Zhao](https://bomingzhao.github.io/)<sup>&#42;</sup>, [Zesong Yang](https://github.com/YZsZY)<sup>&#42;</sup>, [Xingxuan Li](https://github.com/Leo11-strive), [Tao Cheng](https://tao-cheng.cc),<br>
+Haocheng Peng, Ru Zhang, Yang Yang, [Siyuan Huang](https://siyuanhuang.com/), [Yujun Shen](https://shenyujun.github.io/), [Ruizhen Hu](https://csse.szu.edu.cn/staff/ruizhenhu/),<br>
+[Hujun Bao](http://www.cad.zju.edu.cn/home/bao/), [Zhaopeng Cui](https://zhpcui.github.io/)<sup>†</sup>
 
 [![Project Page](https://img.shields.io/badge/Project_Page-DiffWind-2563eb?style=flat-square)](https://zju3dv.github.io/DiffWind/)
 [![arXiv](https://img.shields.io/badge/arXiv-2603.09668-b31b1b?style=flat-square)](https://arxiv.org/abs/2603.09668)
 [![OpenReview](https://img.shields.io/badge/OpenReview-ICLR_2026-8c5a2b?style=flat-square)](https://openreview.net/forum?id=vKVzihkbQo)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-green?style=flat-square)](LICENSE)
 
-[Overview](#-overview) · [Installation](#-installation) · [Reconstruction](#-agent-reconstruction) · [Results](#-reconstruction-results) · [Citation](#-citation)
+[News](#-news) · [Overview](#-overview) · [Installation](#-installation) · [Reconstruction](#-agent-reconstruction) · [Results](#-reconstruction-results) · [Citation](#-citation)
 
 </div>
+
+## 📰 News
+
+- **[2026-10-30]** DiffWind is now featured in [PhysStudio](https://github.com/zju3dv/PhysStudio#diffwind), our open-source world simulator for physics-based animation. 🌏
+- **[2026-10-27]** [Agent Reconstruction](#-agent-reconstruction) is now open source, with automatic force fitting and held-out evaluation.
+- **[2026-08-18]** The DiffWind simulation code is now available! Welcome to try it out and share your feedback.
+- **[2026-01-25]** DiffWind has been accepted to **ICLR 2026**! 🎉
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/huahuo359/open_access_assets/main/DiffWind-ICLR2026/teaser.png" alt="DiffWind: wind-driven object dynamics" width="100%">
